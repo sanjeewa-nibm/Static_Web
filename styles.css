@@ -1,0 +1,332 @@
+/* Main content */
+body {
+    margin:8px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: #f55050;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+    margin-top: 18px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+th {
+    text-align: left;
+}
+
+.wrapper {
+    margin: 36px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-article {
+    margin-left: 32px;
+    margin-right: auto;
+    width: 800px;
+}
+
+.article {
+}
+
+.header .footer {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    color: #fff;
+}
+
+.content {
+    margin-top: 12px;
+    display: flex;
+    flex: 1;
+    color: #000;
+}
+
+.columns{
+    display: flex;
+    flex:1;
+}
+
+.main {
+    padding: 0px 32px;
+    flex: 1;
+    order: 2;
+}
+
+.code-block {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.8rem;
+    background-color: #202A31;
+    color: #C5CBDB;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 3px;
+}
+
+.constant {
+    color: #5496BD;
+}
+
+.type {
+    color: #9B85BB;
+}
+
+.identifier {
+    color: #C17B8D;
+}
+
+.comment {
+    color: #ABB0C0;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    background-color: #2B3740;
+    margin-top: 16px;
+    border-radius: 4px;
+}
+
+.emphasis {
+    font-weight: bold;
+}
+
+.output-header {
+    color: #779;
+    padding-top: 4px;
+    padding-left: 6px;
+}
+
+.output-content {
+    color: #5496BD;
+    padding-left: 12px;
+    font-style: italic;
+}
+
+.operator {
+    color: #469D90;
+}
+
+.statement {
+    color: #7D9761
+}
+
+.sidebar {
+    width: 30%;
+    order: 3;
+}
+
+.header {
+    background-color: #fff;
+    display: inline;
+}
+
+.navBar {
+    display: inline;
+    font-size: 1.2em;
+}
+
+.navBar ul {
+    color: #3fa2a6;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar ul li {
+    display: inline-block;
+    padding: 4px 16px;
+}
+
+.navBar a {
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 0.5 1.2em;
+    color: #468dd4;
+}
+
+#wes-console {
+    color: #2c333b!important;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconImg {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.iconContainer {
+    flex: 1;
+    display: inline-block;
+    padding: 20px;
+    height: 36px;
+    width: 36px;
+}
+
+.profilePic {
+    width: 100%;
+}
+
+.profileContainer {
+    padding-left: 24px;
+    width: 256px;
+    border-left: 1px solid #ddd;
+}
+
+#about {
+    padding: 12px 0;
+}
+
+/* Reading List */
+
+#fiction {
+    display: inline-block;
+    background-color: #a26fbf;
+    min-height: 10px;
+    min-width: 10px;
+}
+
+#nonfiction {
+    display: inline-block;
+    background-color: #1b9e9e;
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.nonfiction {
+    color: #1b9e9e;
+}
+
+.fiction {
+    color: #a26fbf;
+}
+
+.bookCategories {
+    padding: 12px;
+}
+
+.book {
+    color: #555;
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    font-size: 1.2em;
+}
+
+.title {
+}
+
+.bookReview {
+    padding-left: 20px;
+    width: 75%;
+}
+
+.quote {
+    background-color: #f9f9fa;
+    margin-top: 36px;
+    padding: 24px 64px 24px 36px;
+    line-height: 1.5em;
+    color: #2c333b;
+    font-family: 'Noto Serif', serif;
+    /* font-style: italic;*/
+    border-left: 10px solid #468dd4;
+}
+
+/* Current Projects */
+
+.project {
+    padding: 24px 0;
+}
+
+.projLogo {
+    padding: 12px;
+    height: 32px;
+}
+
+.imgLogo {
+    height:100%;
+}
+
+/* Blinking Caret */
+
+.cursor-wrapper {
+    display: inline;
+    padding-top: -14px;
+}
+
+.blinking-cursor {
+    display: inline-block;
+    margin-left: .4em;
+    font-size: 1.8em;
+    color: #468dd4;
+    -webkit-animation: 2s blink infinite;
+    -moz-animation: 2s blink infinite;
+    -ms-animation: 2s blink infinite;
+    -o-animation: 2s blink infinite;
+    animation: 2s blink infinite;
+}
+
+@keyframes "blink" {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .21;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .21;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes "blink" {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .21;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes "blink" {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .21;
+    }
+    100% {
+        opacity: 1;
+    }
+}
